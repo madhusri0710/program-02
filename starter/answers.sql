@@ -1,5 +1,12 @@
-alter table student
-add Email varchar(30);
-alter table student
-add PhoneNumber int(10);
-desc student;
+CREATE TABLE Student (
+    StudentID INT PRIMARY KEY,
+    StudentName VARCHAR(50),
+    Gender VARCHAR(10),
+    DepartmentID INT
+);
+
+INSERT INTO Student (StudentID, StudentName, Gender, DepartmentID)
+VALUES
+(1001, 'Arun', 'Male', 101),
+(1002, 'Divya', 'Female', 102),
+(1003, 'Karthik', 'Male', 101);
